@@ -18,7 +18,7 @@ This is a user-friendly React + Vite application that allows users to sign up, l
 ## Installation
 
 1. Clone Repository:<br>
-   `git clone https://github.com/duanegero/Chat-API.git`
+   `https://github.com/duanegero/Chat-App.git`
 2. Navigate to the Project Directory
 3. Proceed to Docker for next steps.
 
