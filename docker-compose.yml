@@ -1,0 +1,16 @@
+networks:
+  Chat-Network:
+    external: true
+
+services:
+  chat-frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: chat-frontend:latest
+    container_name: Chat-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - Chat-Network
+    restart: unless-stopped
