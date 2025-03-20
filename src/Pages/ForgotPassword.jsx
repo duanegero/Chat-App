@@ -1,5 +1,7 @@
-import React, { useEffect } from "react"; //importing React and useEffect
+//importing React and useEffect
+import React, { useEffect } from "react";
 
+//importing helper function
 import ForgotPasswordForm from "../Components/Forgot Password Page/forgotpassword-form";
 
 export default function ForgotPassword() {

@@ -1,18 +1,22 @@
+//importing packages
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 import { CiSettings } from "react-icons/ci";
 
+//importing helper functions to use in app
 import ChatWindowForm from "../Components/ChatWindow Page/chatWindow-form";
 import userLogout from "../Components/ChatWindow Page/Helpers/userLogout";
 import openSettingsPage from "../Components/Settings Page/Helpers/openSettingsPage";
 
 export default function ChatWindow() {
+  //state variable to handle state of window
   const [socket, setSocket] = useState(null);
   const [messages, setMessages] = useState([]);
   const [username, setUsername] = useState("");
   const [userId, setUserId] = useState("");
 
+  //variable to handle site navigation
   const navigate = useNavigate();
 
   useEffect(() => {

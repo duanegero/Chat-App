@@ -12,8 +12,6 @@ const submitLogin = async (
   setPassword,
   navigate
 ) => {
-  event.preventDefault();
-
   //if all fields aren't filled alert user
   if (!username || !password) {
     alert("Enter both username and password.");

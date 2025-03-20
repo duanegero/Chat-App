@@ -1,5 +1,7 @@
-import React, { useEffect } from "react"; //importing React and useEffect
+//importing React and useEffect
+import React, { useEffect } from "react";
 
+//importing helper function to use in app
 import SignUpForm from "../Components/SignUp Page/signup-form";
 
 export default function SignUp() {

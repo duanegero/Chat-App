@@ -1,11 +1,14 @@
+//importing React and useEffect
 import React, { useEffect } from "react";
 
+//importing helper functions to use in app
 import UpdateUsernameForm from "../Components/Settings Page/updateUsername-form";
 import UpdateUserInfo from "../Components/Settings Page/updateUserInfo";
 import UpdateEmailForm from "../Components/Settings Page/updateEmail-form";
 import DeleteUser from "../Components/Settings Page/deleteUser";
 
 export default function Settings() {
+  //call useEffect hook to set page title and page background
   useEffect(() => {
     document.title = "Settings";
 
