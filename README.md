@@ -5,13 +5,14 @@ This is a user-friendly React + Vite application that allows users to sign up, l
 - [Features](#features)
 - [Installation](#installation)
 - [Docker](#docker)
+- [Usage](#usage)
 - [Socket.IO Repository](#socket)
 - [Backend Repository](#backend)
 
 ## Features
 
 - User-friendly interface for managing user data.
-- Integration with RESTful, Database and Socket.IO server.
+- Integration with RESTful API, Database and Socket.IO server.
 - Real-time chat, live updates, and responsive design.
 
 ## Installation
@@ -33,6 +34,16 @@ This is a user-friendly React + Vite application that allows users to sign up, l
    `docker ps`
 5. **Shut Down the Docker Containers** - Once you're done with using the containers, you can stop and remove the containers with the following command:
    `docker-compose down`
+
+# Usage
+
+Once the Docker container is running, you can access the frontend application in your browser using:
+`http://localhost:3000`
+
+**Important** - To fully experience the functionality of the frontend app (sign up, login, and chat features), make sure the other required containers are also running:
+
+- API container (RESTful API & Database)
+- Socker.IO server container
 
 ## Socket
 
